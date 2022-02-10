@@ -6,7 +6,7 @@
 
 const fetchWeatherAPI = (address) => {
   return new Promise((reject, resolve) => {
-    fetch(`http://localhost:3000/weather?address=${address}`).then(
+    fetch(`/weather?address=${address}`).then(
       (response) => {
         response.json().then((data) => {
           if (data.error) {
